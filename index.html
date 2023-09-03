@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <title>Palindrome Finder</title>
+</head>
+    <style>
+        .displayBlock {
+            display: block !important;
+        }
+    </style>
+
+<body>
+    <div class="container p-5">
+        <div class="headingDiv">
+            <h1>Palindrome Finder</h1>
+        </div>
+        <div class="mb-3 ps-2 mt-3">
+            <label class="form-label">Write a word to find if it is palindrome or not:</label>
+            <input type="text" class="form-control" id="userInput" placeholder="For Example: civic or 1221">
+        </div>
+        <div class="mb-3 ps-2 mt-3 resultDiv d-none">
+            <label class="form-label">Result:</label>
+            <input type="text" class="form-control" id="reversed">
+            <p id="result"></p>
+        </div>
+        <div class="btnDiv ps-2">
+            <button onclick="findPalindrome()" class="btn btn-secondary">Find Palindrome?</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
